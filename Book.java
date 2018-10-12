@@ -1,27 +1,21 @@
+package com.deloitte.library.pojo;
 
 public class Book {
-int id;
-String name;
-String author;
-float price;
-Book(int id,String name,String author,float price){
-	this.id=id;
-	this.name=name;
-	this.author=author;
-	this.price=price;
+private int bookId;
+private String bname;
+private String author;
+private float price;
+public int getBookId() {
+	return bookId;
 }
-
-public int getId() {
-	return id;
+public void setBookId(int bookId) {
+	this.bookId = bookId;
 }
-public void setId(int id) {
-	this.id = id;
+public String getBname() {
+	return bname;
 }
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
+public void setBname(String bname) {
+	this.bname = bname;
 }
 public String getAuthor() {
 	return author;
@@ -34,8 +28,5 @@ public float getPrice() {
 }
 public void setPrice(float price) {
 	this.price = price;
-}
-public String toString(){
-	return "Book Details\n\n\n"+id+" "+name+" "+author+" "+price;
 }
 }
